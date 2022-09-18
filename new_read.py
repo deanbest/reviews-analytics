@@ -17,3 +17,12 @@ for d in data:
 
 print('平均每筆資料長度為', sum_len / len(data))
 
+
+#先讀資料 > 裝清單 > 篩條件
+new = []
+#一筆筆叫出來, 每筆叫出來都叫d
+for d in data:
+	if len(d) > 5:
+		new.append(d)
+print('一共有', len(new), '筆歌詞長度大於5')
+print(new[7])
